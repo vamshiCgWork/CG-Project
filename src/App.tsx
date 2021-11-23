@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+//import './Appp.css';
+import LoginForm from '../src/components/loginForm'
+import Login1 from '../src/components/Login1'
+import Log from '../src/components/Log'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className='login-bg hero is-fullheight' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div className="hero-body" style={{ width: '100%' }}>
+          <div className="columns">
+            <div className="grid-container">
+              <div className="item2">Image</div>
+              <div className="item3">
+                <div className="card">
+                  <div className="card-header">
+                    <div className="card-content">
+                      <LoginForm />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

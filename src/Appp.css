@@ -1,0 +1,33 @@
+.App {
+    text-align: center;
+  }
+.login-bg{
+    background-image: linear-gradient(141deg,#1c4e7f 60%,#012242)!important;
+}
+.hero.is-fullheight {
+    min-height: 100vh;
+  }
+  .hero-body, .section {
+    padding: 3rem 1.5rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns:60% 40%;
+    background-color: #2196F3;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid red;  
+  }
+  .card{
+      text-align: start;
+  }
+.card-header{
+    padding:0px 0px 12px 12px
+}
+  .card-content{
+    padding: 12px;
+  }
+  .mb{
+      margin-bottom: 20px;
+  }
