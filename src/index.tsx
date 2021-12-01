@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import DashBoard from './DashBoard/DashBoard'
 import reportWebVitals from './reportWebVitals';
-
+import Formik2 from './Form/Formik2'
+import Log from './components/Log'
+import FinalForm from './components/FinalForm'
+import { Signup } from '../src/YupandFormik/Signup'
 ReactDOM.render(
   <React.StrictMode>
     <App />
+
+    {/* <FinalForm /> */}
+    {/* <DashBoard /> */}
+    {/* <Formik2 /> */}
+    {/* <Signup /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
