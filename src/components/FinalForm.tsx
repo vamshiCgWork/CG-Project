@@ -75,10 +75,13 @@ export default function FinalForm({ submittedValues, setsubmittedValues }: Props
                     sx={{ backgroundColor: '#425bc2' }}
                 >1</Grid>
                 <Grid item xs={5}
-                    sx={{ backgroundColor: '#252b9c' }}
+                //sx={{ backgroundColor: '#252b9c' }}
                 >
                     <form onSubmit={(e) => handleSubmit(e)}>
-                        <Card sx={{ maxWidth: '100%', height: '100vh', backgroundColor: '#252b9c', color: 'white' }} >
+                        <Card
+                            sx={{ maxWidth: '100%', height: '100vh' }}
+                        //sx={{ maxWidth: '100%', height: '100vh', backgroundColor: '#252b9c', color: 'white' }} 
+                        >
                             <CardHeader sx={{ m: 10 }}
                                 title={<Typography>Login</Typography>}
                             />
@@ -108,11 +111,15 @@ export default function FinalForm({ submittedValues, setsubmittedValues }: Props
 
 
 
-                                <Typography>Forgot Password?</Typography>
+                                <Typography>Forgot Password ?</Typography>
                                 <Grid container sx={{ m: 10, mt: 0 }}></Grid>
                                 <Grid item sx={{ mb: 2, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Typography>Don't have an account?</Typography>
-                                    <Button sx={{ color: 'white' }}>SIGN UP</Button></Grid>
+                                    <Typography >
+                                        <a href="#">Don't have an account ?</a>
+                                    </Typography>
+                                    <Button
+                                    //sx={{ color: 'white' }}
+                                    >SIGN UP</Button></Grid>
                                 <Grid item xs={12}><Button variant='contained' fullWidth type='submit'> SIGN IN</Button></Grid>
                             </CardContent>
                         </Card></form>
