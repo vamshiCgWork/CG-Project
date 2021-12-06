@@ -14,11 +14,7 @@ interface Props {
 const listArr = ['Inbox', 'Starred', 'Send email', 'Drafts']
 export default function DrawerLeft({ leftDraw, setLeftDraw }: Props) {
     const [open, setOpen] = React.useState(true);
-    //for Modal
-    const [openModal, setOpenModal] = React.useState(false);
-    const handleOpenModal = () => setOpenModal(true);
-    const handleCloseModal = () => setOpenModal(false);
-    //  
+
     const handleClick = () => {
         setOpen(!open);
     };
