@@ -72,8 +72,17 @@ export default function FinalForm({ submittedValues, setsubmittedValues }: Props
         <Box>
             <Grid container>
                 <Grid item xs={7}
+                    display={'flex'}
+                    justifyContent={'center'}
                     sx={{ backgroundColor: '#425bc2' }}
-                >1</Grid>
+                >
+                    <Grid container justifyContent={'space-evenly'} alignItems={'center'}
+                        sx={{ backgroundColor: '#252b9c', height: '10vh', width: '50%', mt: 10, color: 'white' }}>
+                        <Grid item >LABEL</Grid>
+                        <Grid item >PDAS MANAGMENT TOOL</Grid>
+                    </Grid>
+
+                </Grid>
                 <Grid item xs={5}
                 //sx={{ backgroundColor: '#252b9c' }}
                 >
